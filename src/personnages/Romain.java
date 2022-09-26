@@ -4,6 +4,12 @@ public class Romain {
 	private String nom;
 	private int force;
 	
+	public Romain(String nom, int force) {
+		super();
+		this.nom = nom;
+		this.force = force;
+	}
+
 	public String getNom() {
 		return nom;
 	}
@@ -24,5 +30,13 @@ public class Romain {
 		} else {
 			parler("J'abandonne...");
 		}
+	}
+	
+	public static void main(String[] args) {
+		Romain minus = new Romain("Minus",8);
+		
+		minus.prendreParole();
+		minus.parler("Je parle !");
+		minus.recevoirCoup(5);
 	}
 }

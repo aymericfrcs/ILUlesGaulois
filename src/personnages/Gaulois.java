@@ -30,14 +30,20 @@ public class Gaulois {
 		romain.recevoirCoup(force / 3);
 	}
 	
-	/* @Override
+	@Override
 	public String toString() {
 		return "Gaulois [nom=" + nom + ", force=" + force + ", effetPotion=" + effetPotion + "]";
-	} */
+	}
 	
 	public static void main(String[] args) {
-		asterix (nom = "Astérix", force = 8);
+		Gaulois asterix = new Gaulois("Astérix",8);
+		Romain minus = new Romain("Minus",8);
+		
 		System.out.println(asterix);
+		
+		asterix.prendreParole();
+		asterix.parler("Je parle");
+		asterix.frapper(minus);
 		
 	}
 }
