@@ -33,7 +33,7 @@ public class Romain {
 		} else {
 			parler("J'abandonne...");
 		}
-		assert forceAvant < force; //la force du romain a diminuée
+		assert forceAvant > force; //la force du romain a diminuée
 	}
 	
 	public static void main(String[] args) {
