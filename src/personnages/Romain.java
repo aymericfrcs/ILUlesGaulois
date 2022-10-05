@@ -42,5 +42,7 @@ public class Romain {
 		minus.prendreParole();
 		minus.parler("Je parle !");
 		minus.recevoirCoup(5);
+		
+		
 	}
 }
